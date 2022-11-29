@@ -1,18 +1,17 @@
 """Print out all the melons in our inventory."""
 
+from melons import melons 
 
-from melons import melon_names, melon_prices, melon_seedlessness 
+# DEFAULT VAR:flesh color, rind color, and average weight
 
-
-def print_melon(name, price, seedless):
+def print_melon(melons):
     """Print each melon with corresponding attribute information."""
+    for k_ey, val in melons.items():
+        print(k_ey)
+        for keyss, valss in val.items():
+            print(f"{keyss}: {valss}")
 
-    have_or_have_not = 'have'
-    if seedless:
-        have_or_have_not = 'do not have'
+#this drained me omg i even tried the zip function
 
-    print(f'{name}s {have_or_have_not} seeds and are ${price}')
-
-
-for i in melon_names:
-    print_melon(melon_names[i], melon_prices[i], melon_seedlessness[i])
+# i kept wanting to do the "for k_ey, val in melons.items()""...
+# and a regular for loop inside of that and trying to index with brackets...

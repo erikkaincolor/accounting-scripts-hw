@@ -1,23 +1,24 @@
-melon_names = {
-    1: 'Honeydew',
-    2: 'Crenshaw',
-    3: 'Crane',
-    4: 'Casaba',
-    5: 'Cantaloupe',
+
+melons={ 
+    #melons["honeydew"]["seeds"]= true
+    #melons["honeydew"]["price"]= 0.99
+"Honeydew":
+    {"price": 0.99,
+    "seeds": True},
+
+"Crenshaw":
+    {"price": 2.00,
+    "seeds": False},
+
+"Crane":
+    {"price": 2.50,
+    "seeds": False},
+
+"Casaba":
+    {"price": 0.99,
+    "seeds": False}
 }
 
-melon_prices = {
-    1: 0.99,
-    2: 2.00,
-    3: 2.50,
-    4: 2.50,
-    5: 0.99,
-}
 
-melon_seedlessness = {
-    1: True,
-    2: False,
-    3: False,
-    4: False,
-    5: False,
-}
+# Flesh_color:None, Rind Color:None, average_weight=None
+
